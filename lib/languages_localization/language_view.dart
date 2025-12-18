@@ -13,29 +13,32 @@ class LanguageView extends StatelessWidget {
         children: [
           ListTile(title: Text('message'.tr), subtitle: Text('name'.tr)),
           SizedBox(height: 10.h),
-          Row(
-            children: [
-              OutlinedButton(
-                onPressed: () {
-                  Get.updateLocale(Locale('en', 'US'));
-                },
-                child: Text('ENGLISH'),
-              ),
-              SizedBox(width: 10.w),
-              OutlinedButton(
-                onPressed: () {
-                  Get.updateLocale(Locale('ur', 'PK'));
-                },
-                child: Text('URDU'),
-              ),
-              SizedBox(width: 10.w),
-              OutlinedButton(
-                onPressed: () {
-                  Get.updateLocale(Locale('hi', 'IN'));
-                },
-                child: Text('HINDI'),
-              ),
-            ],
+          OutlinedButton(
+            onPressed: () {
+              Get.updateLocale(Locale('en', 'US'));
+            },
+            child: Text('ENGLISH'),
+          ),
+          SizedBox(height: 10.h),
+          OutlinedButton(
+            onPressed: () {
+              Get.updateLocale(Locale('ur', 'PK'));
+            },
+            child: Text('URDU'),
+          ),
+          SizedBox(height: 10.h),
+          OutlinedButton(
+            onPressed: () {
+              Get.updateLocale(Locale('hi', 'IN'));
+            },
+            child: Text('HINDI'),
+          ),
+          SizedBox(height: 10.h),
+          OutlinedButton(
+            onPressed: () {
+              Get.updateLocale(Locale('sp', 'SP'));
+            },
+            child: Text('SPANISH'),
           ),
         ],
       ),
