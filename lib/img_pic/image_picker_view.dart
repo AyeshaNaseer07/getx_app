@@ -5,7 +5,7 @@ import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/route_manager.dart';
-import 'package:mygetx_app/image_picker/image_picker_controller.dart';
+import 'package:mygetx_app/img_pic/image_picker_controller.dart';
 
 class ImagePickerView extends StatelessWidget {
   ImagePickerView({super.key});

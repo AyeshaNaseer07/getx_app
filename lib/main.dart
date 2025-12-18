@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:mygetx_app/languages_localization/language_controller.dart';
 import 'package:mygetx_app/modules/Getx_examples/example_view.dart';
 
 void main() {
@@ -20,6 +21,9 @@ class MyGetxApp extends StatelessWidget {
       builder: (_, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
+          locale: Locale('en', 'US'),
+          fallbackLocale: Locale('en', 'US'),
+          translations: Languages(),
           title: 'First Method',
           theme: ThemeData(
             primarySwatch: Colors.blue,
