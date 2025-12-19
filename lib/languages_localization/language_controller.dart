@@ -6,6 +6,6 @@ class Languages extends Translations {
     'en_US': {'message': 'How are you?', 'name': 'What is your name?'},
     'ur_PK': {'message': 'آپ کیسے ہیں؟', 'name': 'آپ کا نام کیا ہے؟'},
     'hi_IN': {'message': 'आप कैसे हैं?', 'name': 'आपका क्या नाम है?'},
-    'sp_SP': {'message': '¿Cómo estás?', 'name': '¿Cómo te llamas?'},
+    'es_SP': {'message': '¿Cómo estás?', 'name': '¿Cómo te llamas?'},
   };
 }

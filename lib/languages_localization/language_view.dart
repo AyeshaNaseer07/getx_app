@@ -36,7 +36,7 @@ class LanguageView extends StatelessWidget {
           SizedBox(height: 10.h),
           OutlinedButton(
             onPressed: () {
-              Get.updateLocale(Locale('sp', 'SP'));
+              Get.updateLocale(Locale('es', 'SP'));
             },
             child: Text('SPANISH'),
           ),

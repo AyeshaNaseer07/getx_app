@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/route_manager.dart';
+import 'package:mygetx_app/img_pic/image_picker_view.dart';
 import 'package:mygetx_app/languages_localization/language_view.dart';
 import 'package:mygetx_app/modules/Getx_examples/example_controller.dart';
 import 'package:mygetx_app/modules/fav_screen/fav_view.dart';
@@ -74,6 +75,14 @@ class _ExampleViewState extends State<ExampleView> {
                       );
                     }),
                   ],
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Get.to(() {
+                      return ImagePickerView();
+                    });
+                  },
+                  child: const Text("Image Picker"),
                 ),
                 ElevatedButton(
                   onPressed: () {
