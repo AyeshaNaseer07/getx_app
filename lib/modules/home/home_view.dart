@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/route_manager.dart';
 import 'package:mygetx_app/modules/img_picker/image_picker_view.dart';
 import 'package:mygetx_app/modules/fav_list/fav_list_view.dart';
 import 'package:mygetx_app/modules/home/home_custom_widget.dart';
@@ -26,11 +27,24 @@ class _ExampleViewState extends State<ExampleView> {
     debugPrint("rebuild whole screen");
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Getx Counter Example",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-        ),
+        title: Text('GetX Examples'),
+        actions: [
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              if (value == 'light') {
+                Get.changeTheme(lightTheme);
+              } else if (value == 'dark') {
+                Get.changeTheme(darkTheme);
+              }
+            },
+            itemBuilder: (context) => const [
+              PopupMenuItem<String>(value: 'light', child: Text('Light Mode')),
+              PopupMenuItem<String>(value: 'dark', child: Text('Dark Mode')),
+            ],
+          ),
+        ],
       ),
+
       body: Column(
         children: [
           customElevatedButton(
@@ -67,3 +81,13 @@ class _ExampleViewState extends State<ExampleView> {
     );
   }
 }
+
+final ThemeData lightTheme = ThemeData(
+  brightness: Brightness.light,
+  primarySwatch: Colors.blue,
+);
+
+final ThemeData darkTheme = ThemeData(
+  brightness: Brightness.dark,
+  primarySwatch: Colors.blueGrey,
+);
