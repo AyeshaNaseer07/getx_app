@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:mygetx_app/languages_localization/language_controller.dart';
-import 'package:mygetx_app/modules/Getx_examples/example_view.dart';
+import 'package:mygetx_app/modules/languages_localization/language_controller.dart';
+import 'package:mygetx_app/modules/home/home_view.dart';
 
 void main() {
   runApp(const MyGetxApp());

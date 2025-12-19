@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/route_manager.dart';
-import 'package:mygetx_app/modules/fav_screen/fav_controller.dart';
+import 'package:mygetx_app/modules/fav_list/fav_list_controller.dart';
 
-class ExpView extends StatelessWidget {
-  ExpView({super.key});
+class FavListView extends StatelessWidget {
+  FavListView({super.key});
 
   final FavouriteController favcontroller = Get.put(FavouriteController());
 
