@@ -8,6 +8,7 @@ import 'package:mygetx_app/modules/increment_counter/increment_view.dart';
 import 'package:mygetx_app/modules/languages_localization/language_view.dart';
 import 'package:mygetx_app/modules/opacity_slider/opacity_slider_view.dart';
 import 'package:mygetx_app/modules/switch_notifications/switch_notification_view.dart';
+import 'package:mygetx_app/modules/video_player/video_player_view.dart';
 
 class ExampleView extends StatefulWidget {
   const ExampleView({super.key});
@@ -75,6 +76,11 @@ class _ExampleViewState extends State<ExampleView> {
           customElevatedButton(
             text: 'Image Picker Example',
             page: ImagePickerView(),
+          ),
+          SizedBox(height: 10.h),
+          customElevatedButton(
+            text: 'Video Picker Example',
+            page: VideoPickerView(),
           ),
         ],
       ),
