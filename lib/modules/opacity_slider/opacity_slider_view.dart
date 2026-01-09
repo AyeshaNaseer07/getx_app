@@ -27,7 +27,7 @@ class _OpacitySliderViewState extends State<OpacitySliderView> {
       body: Column(
         children: [
           Obx(() {
-            print("rebuild");
+            debugPrint("rebuild");
             return Container(
               height: 300,
               width: 400,

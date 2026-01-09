@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:mygetx_app/modules/clap_detect/clap_detect_view.dart';
 import 'package:mygetx_app/modules/languages_localization/language_controller.dart';
 import 'package:mygetx_app/modules/home/home_view.dart';
 
@@ -28,7 +29,7 @@ class MyGetxApp extends StatelessWidget {
           theme: lightTheme,
           darkTheme: darkTheme,
           themeMode: ThemeMode.system,
-          home: child,
+          home: const HomeScreen(),
         );
       },
     );
